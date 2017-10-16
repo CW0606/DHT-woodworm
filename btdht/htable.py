@@ -8,56 +8,55 @@ import random
 '''
 one hash_info conrresponds  many peers
 '''
-fileLogger=logging.getLogger("btdht")
-class HashTable(object):
+fileLogger = logging.getLogger("btdht")
 
+
+class HashTable(object):
     def __init__(self):
         self.hashes = {}
-        #the mutex to access the critical resource
+        # the mutex to access the critical resource
         self.lock = threading.Lock()
         try:
-            self.conn=MySQLdb.connect(host='127.0.0.1',user='root',passwd='456',port=3306,charset="UTF8")
-            self.cur=self.conn.cursor()
+            self.conn = MySQLdb.connect(host='127.0.0.1', user='fxk', passwd='FXK0606', port=3306, charset="UTF8")
+            self.cur = self.conn.cursor()
             self.conn.select_db('dht')
-        except MySQLdb.Error,e:
-            print 'mysql error %d:%s'%(e.args[0],e.args[1])
-
+        except MySQLdb.Error, e:
+            print 'mysql error %d:%s' % (e.args[0], e.args[1])
 
     def add_hash(self, hash):
-        #利用with可以防止异常的问题
+        # 利用with可以防止异常的问题
         with self.lock:
             if hash not in self.hashes:
                 self.hashes[hash] = []
-                sql="insert into hash_info(hash,info) values('%s','%s')"%(hash.encode('hex'),"")
+                sql = "insert into hash_info(hash,info) values('%s','%s')" % (hash.encode('hex'), "")
 
                 try:
                     self.cur.execute(sql)
                     self.conn.commit()
-                    fileLogger.debug('find new hash: %s'%hash.encode('hex').upper())
-                except MySQLdb.Error,e:
+                    fileLogger.debug('find new hash: %s' % hash.encode('hex').upper())
+                except MySQLdb.Error, e:
                     logging.debug('insert duplicate hash into mysql')
-
 
     def remove_hash(self, hash):
         with self.lock:
             if hash in self.hashes:
                 del self.hashes[hash]
 
-    #对某个资源添加一个peer
+    # 对某个资源添加一个peer
     def add_peer(self, hash, peer):
         with self.lock:
             if hash in self.hashes:
                 if peer not in self.hashes[hash]:
                     self.hashes[hash].append(peer)
 
-    #never remove any peer
+    # never remove any peer
     def remove_peer(self):
         return
 
     def count_hash_peers(self, hash):
         return len(self.hashes[hash])
 
-    #获取某个hash值对应的所有peer值
+    # 获取某个hash值对应的所有peer值
     def get_hash_peers(self, hash):
         return self.hashes[hash]
 
@@ -77,29 +76,28 @@ class HashTable(object):
         try:
             self.cur.close()
             self.conn.close()
-        except MySQLdb.Error,e:
-            print 'mysql error %d:%s'%(e.args[0],e.args[1])
+        except MySQLdb.Error, e:
+            print 'mysql error %d:%s' % (e.args[0], e.args[1])
 
-
-    def saveHashInfo(self,name):
+    def saveHashInfo(self, name):
         '''
         with open(name+"_hash_info.txt",'a') as file:
             for hash in self.hashes.keys():
                 file.write(hash.encode('hex')+"\n\r")
         '''
         try:
-            conn=MySQLdb.connect(host='127.0.0.1',user='root',passwd='456',port=3306,charset="UTF8")
-            cur=conn.cursor()
+            conn = MySQLdb.connect(host='127.0.0.1', user='root', passwd='fk<A+GrRp4Cc', port=3306, charset="UTF8")
+            cur = conn.cursor()
             conn.select_db('dht')
             for hash in self.hashes.keys():
-                hash_hex=(hash.encode('hex'))
-                sql="insert into hash_info(hash,info) values('%s','%s')"%(hash_hex,"")
+                hash_hex = (hash.encode('hex'))
+                sql = "insert into hash_info(hash,info) values('%s','%s')" % (hash_hex, "")
                 try:
                     cur.execute(sql)
                     conn.commit()
-                except MySQLdb.Error,e:
-                    print 'mysql error %d:%s'%(e.args[0],e.args[1])
+                except MySQLdb.Error, e:
+                    print 'mysql error %d:%s' % (e.args[0], e.args[1])
             cur.close()
             conn.close()
-        except MySQLdb.Error,e:
-            print 'mysql error %d:%s'%(e.args[0],e.args[1])
+        except MySQLdb.Error, e:
+            print 'mysql error %d:%s' % (e.args[0], e.args[1])

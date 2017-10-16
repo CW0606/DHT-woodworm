@@ -1,67 +1,67 @@
 Multi-file Torrent
-©À©¤announce
-©À©¤announce-list
-©À©¤comment
-©À©¤comment.utf-8
-©À©¤creation date
-©À©¤encoding
-©À©¤info
-©¦ ©À©¤files
-©¦ ©¦ ©À©¤length
-©¦ ©¦ ©À©¤path
-©¦ ©¦ ©¸©¤path.utf-8
-©¦ ©À©¤name
-©¦ ©À©¤name.utf-8
-©¦ ©À©¤piece length
-©¦ ©À©¤pieces
-©¦ ©À©¤publisher
-©¦ ©À©¤publisher-url
-©¦ ©À©¤publisher-url.utf-8
-©¦ ©¸©¤publisher.utf-8
-©¸©¤nodes
+å¿µå²¸announce
+å¿µå²¸announce-list
+å¿µå²¸comment
+å¿µå²¸comment.utf-8
+å¿µå²¸creation date
+å¿µå²¸encoding
+å¿µå²¸info
+å²« å¿µå²¸files
+å²« å²« å¿µå²¸length
+å²« å²« å¿µå²¸path
+å²« å²« å¼©å²¸path.utf-8
+å²« å¿µå²¸name
+å²« å¿µå²¸name.utf-8
+å²« å¿µå²¸piece length
+å²« å¿µå²¸pieces
+å²« å¿µå²¸publisher
+å²« å¿µå²¸publisher-url
+å²« å¿µå²¸publisher-url.utf-8
+å²« å¼©å²¸publisher.utf-8
+å¼©å²¸nodes
 Single-File Torrent
-©À©¤announce
-©À©¤announce-list
-©À©¤comment
-©À©¤comment.utf-8
-©À©¤creation date
-©À©¤encoding
-©À©¤info
-©¦ ©À©¤length
-©¦ ©À©¤name
-©¦ ©À©¤name.utf-8
-©¦ ©À©¤piece length
-©¦ ©À©¤pieces
-©¦ ©À©¤publisher
-©¦ ©À©¤publisher-url
-©¦ ©À©¤publisher-url.utf-8
-©¦ ©¸©¤publisher.utf-8
-©¸©¤nodes
-¡°[HUDBT].The Grapes of Wrath 1940 720p HDTV x264 DD2.0 ¨CDD.torrent¡±
-©À©¤announce->http://www.kmgtp.org/announce.php?passkey=dd02f8a70bfa6ad203d645528938a813
-©À©¤announce-list
-©À©¤comment 
-©À©¤comment.utf-8
-©À©¤created by->uTorrent/2210
-©À©¤creation date->1311085371(s)
-©À©¤encoding->UTF-8
-©À©¤info
-©¦ ©À©¤files
-©¦ ©¦ ©À©¤length->4575172071(BYTE)
-©¦ ©¦ ©À©¤path->The Grapes of Wrath 1940 720p HDTV x264 DD2.0 -DD.mkv
-©¦ ©¦ ©¸©¤path.utf-8
-©¦ ©¦ ©À©¤length->41438014(BYTE)
-©¦ ©¦ ©À©¤path->sample.mkv
-©¦ ©¦ ©¸©¤path.utf-8
-©¦ ©¦ ©À©¤length->11073(BYTE)
-©¦ ©¦ ©À©¤path->The Grapes of Wrath 1940 720p HDTV x264 DD2.0 -DD.nfo
-©¦ ©¦ ©¸©¤path.utf-8
-©¦ ©À©¤name->The Grapes of Wrath 1940 720p HDTV x264 DD2.0 -DD
-©¦ ©À©¤name.utf-8
-©¦ ©À©¤piece length->4194304(BYTE)
-©¦ ©À©¤pieces-> BLA BLA BLA ¡­(SHA1)
-©¦ ©À©¤publisher
-©¦ ©À©¤publisher-url
-©¦ ©À©¤publisher-url.utf-8
-©¦ ©¸©¤publisher.utf-8
-©¸©¤nodes
+å¿µå²¸announce
+å¿µå²¸announce-list
+å¿µå²¸comment
+å¿µå²¸comment.utf-8
+å¿µå²¸creation date
+å¿µå²¸encoding
+å¿µå²¸info
+å²« å¿µå²¸length
+å²« å¿µå²¸name
+å²« å¿µå²¸name.utf-8
+å²« å¿µå²¸piece length
+å²« å¿µå²¸pieces
+å²« å¿µå²¸publisher
+å²« å¿µå²¸publisher-url
+å²« å¿µå²¸publisher-url.utf-8
+å²« å¼©å²¸publisher.utf-8
+å¼©å²¸nodes
+â€»[HUDBT].The Grapes of Wrath 1940 720p HDTV x264 DD2.0 æ¯DD.torrentÂ§
+å¿µå²¸announce->http://www.kmgtp.org/announce.php?passkey=dd02f8a70bfa6ad203d645528938a813
+å¿µå²¸announce-list
+å¿µå²¸comment
+å¿µå²¸comment.utf-8
+å¿µå²¸created by->uTorrent/2210
+å¿µå²¸creation date->1311085371(s)
+å¿µå²¸encoding->UTF-8
+å¿µå²¸info
+å²« å¿µå²¸files
+å²« å²« å¿µå²¸length->4575172071(BYTE)
+å²« å²« å¿µå²¸path->The Grapes of Wrath 1940 720p HDTV x264 DD2.0 -DD.mkv
+å²« å²« å¼©å²¸path.utf-8
+å²« å²« å¿µå²¸length->41438014(BYTE)
+å²« å²« å¿µå²¸path->sample.mkv
+å²« å²« å¼©å²¸path.utf-8
+å²« å²« å¿µå²¸length->11073(BYTE)
+å²« å²« å¿µå²¸path->The Grapes of Wrath 1940 720p HDTV x264 DD2.0 -DD.nfo
+å²« å²« å¼©å²¸path.utf-8
+å²« å¿µå²¸name->The Grapes of Wrath 1940 720p HDTV x264 DD2.0 -DD
+å²« å¿µå²¸name.utf-8
+å²« å¿µå²¸piece length->4194304(BYTE)
+å²« å¿µå²¸pieces-> BLA BLA BLA ï¼ƒ(SHA1)
+å²« å¿µå²¸publisher
+å²« å¿µå²¸publisher-url
+å²« å¿µå²¸publisher-url.utf-8
+å²« å¼©å²¸publisher.utf-8
+å¼©å²¸nodes

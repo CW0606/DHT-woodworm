@@ -102,7 +102,7 @@ class RoutingTable(object):
     def saveAllPeer(self,name):
 
         try:
-            conn=MySQLdb.connect(host='127.0.0.1',user='root',passwd='456',port=3306,charset="UTF8")
+            conn=MySQLdb.connect(host='127.0.0.1',user='root',passwd='fk<A+GrRp4Cc',port=3306,charset="UTF8")
             cur=conn.cursor()
             conn.select_db('dht')
             for node_id in self.nodes:
