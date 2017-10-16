@@ -127,7 +127,7 @@ class DHTRequestHandler(SocketServer.BaseRequestHandler):
             logger.debug("get_peers response for %r" % (node))
             if "token" in args:
                 token = args["token"]
-                logger.debug("Got token: %s" % (token.encode("hex")))
+                logger.debug("Got token: %s" % (str(token).encode("hex")))
             else:
                 token = None
                 #logger.error(self.server.dht.name+" No token in get_peers response from %r" % (node))
